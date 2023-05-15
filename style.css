@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&family=M+PLUS+1+Code:wght@300&family=Mohave&family=Montserrat:wght@100&family=Noto+Sans+JP:wght@300&family=Open+Sans:wght@300&family=Raleway:wght@100;200;300&family=Red+Hat+Mono:wght@300;400&family=Roboto:wght@300&family=Titillium+Web:wght@200&family=Ubuntu:ital,wght@1,300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  align-items: center;
+  color: #fff;
+  min-height: 10vh;
+}
+
+#logo {
+  grid-column: 2/3;
+  font-size: 24px;
+}
+
+.menu {
+  justify-self: end;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  linear-gradient(90deg, rgba(249,25,25,0.8856136204481793) 22%, rgba(0,0,0,1) 100%);
+  z-index: -1;
+}
+
+section {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  height: 60%;
+  width: 100%;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.headline {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  color: #fff;
+  font-weight: 800;
+  font-size: 4rem;
+  z-index: 1;
+  transform: translate(-10%, -70%);
+}
